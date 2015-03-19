@@ -4,14 +4,15 @@
  * You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-[JSImplementation="@mozilla.org/FxOSUService;1",
+[JSImplementation="@mozilla.org/fxosuService;1",
  NavigatorProperty="mozFxOSUService"]
 interface FxOSUService {
   DOMString batteryLevel();
   DOMString batteryCharging();
-  DOMString recentRxTx();
+  DOMRequest recentRxTx();
   DOMString latencyInfo();
   DOMString showLatencyInfo();
+  DOMString memoryManager(); 
   DOMString connectionType();
   DOMString connectionUp();
   DOMString connectionQuality();
